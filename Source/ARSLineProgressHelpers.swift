@@ -56,12 +56,18 @@ func ars_window() -> UIWindow? {
 	case .blur, .simple:
 		backgroundView.frame = CGRect(x: center.x - sideLengths / 2, y: center.y - sideLengths / 2, width: sideLengths, height: sideLengths)
 		backgroundView.layer.cornerRadius = ars_config.backgroundViewCornerRadius
+        backgroundView.layer.shadowColor = UIColor.black.cgColor
+        backgroundView.layer.shadowOpacity = 0.1
+        backgroundView.layer.shadowRadius = 5
+        backgroundView.layer.shadowOffset = CGSize.init(width: 11, height: 11)
+        backgroundView.layer.shadowPath = UIBezierPath(rect: backgroundView.bounds).cgPath
+        backgroundView.layer.shouldRasterize = true
 	case .full:
 		backgroundView.frame = CGRect(x: bounds.minX, y: bounds.minY, width: bounds.width, height: bounds.height)
 		backgroundView.layer.cornerRadius = 0
 	}
 	
-	backgroundView.backgroundColor = UIColor(cgColor: ars_config.backgroundViewColor)
+	backgroundView.backgroundColor = UIColor.white
 	
 	return true
 }

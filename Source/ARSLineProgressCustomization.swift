@@ -16,7 +16,7 @@ final public class ARSLineProgressConfiguration: NSObject {
 	
 	public static var backgroundViewDismissTransformScale: CGFloat = 0.9
 	public static var backgroundViewColor: CGColor = UIColor.clear.cgColor
-	public static var backgroundViewStyle: BackgroundStyle = .blur
+	public static var backgroundViewStyle: BackgroundStyle = .simple
 	public static var backgroundViewCornerRadius: CGFloat = 20.0
 	public static var backgroundViewPresentAnimationDuration: CFTimeInterval = 0.3
 	public static var backgroundViewDismissAnimationDuration: CFTimeInterval = 0.3
