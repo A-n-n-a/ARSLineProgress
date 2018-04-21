@@ -59,7 +59,7 @@ func ars_window() -> UIWindow? {
         backgroundView.layer.shadowColor = UIColor.black.cgColor
         backgroundView.layer.shadowOpacity = 0.1
         backgroundView.layer.shadowRadius = 5
-        backgroundView.layer.shadowOffset = CGSize.init(width: 11, height: 11)
+        backgroundView.layer.shadowOffset = CGSize.init(width: 0, height: 0)
         backgroundView.layer.shadowPath = UIBezierPath(rect: backgroundView.bounds).cgPath
         backgroundView.layer.shouldRasterize = true
 	case .full:
