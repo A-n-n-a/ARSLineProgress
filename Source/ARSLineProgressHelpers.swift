@@ -183,7 +183,7 @@ func ars_presentLoader(_ loader: ARSLoader, onView view: UIView?, completionBloc
 	
 	let emptyView = loader.emptyView
 	emptyView.backgroundColor = .clear
-	emptyView.frame = loader.backgroundView.bounds
+	emptyView.frame = UIScreen.main.bounds
 	emptyView.addSubview(loader.backgroundView)
 	
 	ars_dispatchOnMainQueue {
